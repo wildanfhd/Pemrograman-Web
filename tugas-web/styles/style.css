@@ -1,0 +1,94 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.logo {
+    /* padding-top: 0.5rem; */
+    padding-left: 2rem;
+}
+
+.moto-section {
+  padding-left: 8rem;
+}
+
+.navbar-custom {
+    height: 100px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown .dropdown-menu {
+    display: none;
+  }
+  .navbar .navbar-nav .nav-link {
+      color: #000000;
+      font-size: 15px;
+  }
+  .navbar .navbar-nav .nav-link:hover{
+      color: #d16e1d;
+  }
+  
+  @media screen and (min-width: 992px) {
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+    .dropdown .dropdown-menu {
+      display: none;
+    }
+  }
+  
+  @media only screen and (min-width: 992px) {
+    .dropdown:hover .dropdown-toggle::after {
+      border-bottom: 0.3em solid;
+      border-top: 0;
+    }
+  }
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.6;
+    background-image: url("/tugas-web/assets/bg-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    padding-top: 50px;
+    height: 70vh;
+    /* height: 100%; */
+    /* width: 100%; */
+}
+
+.hero ::before {
+    content: "";
+    position: absolute;
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url("/tugas-web/assets/bg-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.card {
+  height: 100%;
+}
+
+/* .card-image-top {
+
+} */
+
+
