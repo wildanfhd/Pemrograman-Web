@@ -13,77 +13,100 @@ body {
     padding-left: 2rem;
 }
 
-/* .moto-section {
-  padding-left: 8rem;
-} */
-
-/* .navbar-custom {
-    height: 100px;
-} */
 
 .dropdown:hover .dropdown-menu {
+  display: block;
+}
+  
+.dropdown .dropdown-menu {
+  display: none;
+}
+.navbar .navbar-nav .nav-link {
+  color: #000000;
+  font-size: 15px;
+}
+.navbar .navbar-nav .nav-link:hover{
+  color: #7b92be;
+}
+  
+@media screen and (min-width: 992px) {
+  .dropdown:hover .dropdown-menu {
     display: block;
   }
-  
   .dropdown .dropdown-menu {
     display: none;
   }
-  .navbar .navbar-nav .nav-link {
-      color: #000000;
-      font-size: 15px;
-  }
-  .navbar .navbar-nav .nav-link:hover{
-      color: #7b92be;
-  }
-  
-  @media screen and (min-width: 992px) {
-    .dropdown:hover .dropdown-menu {
-      display: block;
-    }
-    .dropdown .dropdown-menu {
-      display: none;
-    }
-  }
-  
-  @media only screen and (min-width: 992px) {
-    .dropdown:hover .dropdown-toggle::after {
-      border-bottom: 0.3em solid;
-      border-top: 0;
-    }
-  }
-
-.hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0.6;
-    background-image: url("/tugas-web/assets/bg-image.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    padding-top: 50px;
-    height: 65vh;
-    /* height: 100%; */
-    /* width: 100%; */
 }
+  
+@media only screen and (min-width: 992px) {
+  .dropdown:hover .dropdown-toggle::after {
+    border-bottom: 0.3em solid;
+    border-top: 0;
+  }
+}
+  /*Background image setiap page*/
 
-.hero ::before {
-    content: "";
-    position: absolute;
-    opacity: 0.6;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-image: url("/tugas-web/assets/bg-image.jpg");
+  .main-bg {
+    background-image: url("/assets/home/bg-image.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+    padding: 310px 0 240px;
+    color: white;
+    height: 45vh;
+    opacity: 0.9;
+  }
+
+  .about-bg {
+    background-image: url("/assets/home/bg-image.jpg");
+    background-size: cover;
+    padding: 310px 0 240px;
+    color: white;
+    opacity: 0.9;
+    height: 45vh;
+  }
+
+  .inf-bg {
+    background-image: url("/assets/informatika/inf-bg.JPG");
+    background-size: cover;
+    padding: 300px 0 240px;
+    color: white;
+    height: 45vh;
+    opacity: 0.8;
+  }
+
+  .akun-bg {
+    background-image: url("/assets/akuntansi/back-img.JPG");
+    background-size: cover;
+    padding: 310px 0 240px;
+    color: white;
+    height: 45vh;
+  }
+
+  .contact-bg {
+    background-image: url("/assets/home/bg-image.jpg");
+    background-size: cover;
+    padding: 310px 0 240px;
+    color: white;
+    opacity: 0.9;
+    height: 45vh;
+  }
+
+  .pend-bg {
+    background-image: url("/assets/home/bg-image.jpg");
+    background-size: cover;
+    padding: 310px 0 240px;
+    color: white;
+    height: 45vh;
+    opacity: 0.9;
+  }
+
+
+.text-hero {
+  margin-top: -70px;
 }
 
 .card {
+  box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;  
   height: 100%;
 }
 
@@ -92,6 +115,7 @@ body {
   font-weight: 600;
   font-size: 16px;
 }
+
 
 .page-title {
   background-image: url("https://www.upj.ac.id/upload/module/news/img632.jpg");
@@ -125,5 +149,62 @@ body {
 }
 
 .footer-img {
-  height: 90px;
+  height: 80px;
+}
+
+/* About.html*/
+.about-content {
+  font-size: 16px;
+  margin: 0 0 10px;
+}
+
+.about-content p{
+  text-align: justify;
+}
+
+.judul {
+  font-size: 25px;
+}
+
+.subjudul {
+  font-size: 24px;
+}
+
+.about-img {
+  margin: 5px;
+}
+
+#img-gedung {
+  max-width: 60%; 
+  float: left; 
+}
+
+#img-logo {
+  max-width: 40%;
+  width: 200px;
+  float: right;
+}
+
+.logo-nilai {
+  width: 75px;
+  height: 75px;
+}
+
+.about-card {
+  box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* informatika.html dan akuntansi.html*/
+
+.sub-title {
+  color: #000000;
+  text-decoration: none;
+}
+
+.sub-title:hover {
+  color: #7b92be;
 }
